@@ -12,6 +12,7 @@ Integrate your native app with Okta using the AppAuth library.
   s.source           = { :git => 'https://github.com/okta/okta-oidc-ios.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
+  s.ios.weak_frameworks = "AuthenticationServices"
   s.source_files = 'Okta/**/*'
   s.swift_version = '4.2'
 end
